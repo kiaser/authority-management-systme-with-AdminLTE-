@@ -30,6 +30,7 @@ namespace AdminLTE.UnitTest.Base.DataBase
 
             #region userConfig
 
+            modelBuilder.Entity<UserEntity>().HasKey(p => p.UserId);
             modelBuilder.Entity<UserEntity>().ToTable("User");
             modelBuilder.Entity<UserEntity>()
                 .Property(p => p.UserId)
