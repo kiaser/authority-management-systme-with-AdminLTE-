@@ -35,8 +35,8 @@ namespace AdminLTE.UnitTest.Base.DataBase
             modelBuilder.Entity<UserEntity>()
                 .Property(p => p.UserId)
                 .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
-            modelBuilder.Entity<UserEntity>().Property(t => t.LoginName).HasMaxLength(50);
-            modelBuilder.Entity<UserEntity>().Property(t => t.PassWord).HasMaxLength(50); 
+            modelBuilder.Entity<UserEntity>().Property(t => t.LoginName).HasMaxLength(50).IsRequired();
+            modelBuilder.Entity<UserEntity>().Property(t => t.PassWord).HasMaxLength(50).IsRequired(); 
             #endregion
 
         }

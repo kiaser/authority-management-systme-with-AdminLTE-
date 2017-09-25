@@ -21,8 +21,10 @@ namespace AdminLTE.UnitTest.Base
 
             Assert.IsTrue(users != null && users.Count > 0);
 
-            Console.WriteLine(string.Join(",",users.Select(t=>t.LoginName)));
-            Console.WriteLine(string.Join(",",users.Select(t=>t.PassWord)));
+            WrileList(users.Select(t => t.UserId.ToString()),users.Select(t => t.LoginName),users.Select(t=>t.PassWord));
+
+            //Console.WriteLine(string.Join(",",users.Select(t=>t.LoginName)));
+            //Console.WriteLine(string.Join(",",users.Select(t=>t.PassWord)));
         }
 
     }

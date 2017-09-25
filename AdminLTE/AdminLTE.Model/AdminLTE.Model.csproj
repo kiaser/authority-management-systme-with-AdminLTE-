@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CCF80D1C-3FD9-4D22-923E-FFBD480F6212}</ProjectGuid>
+    <ProjectGuid>{6086AC02-43A9-4BC8-8B4F-FA88125E257F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AdminLTE.UnitTest</RootNamespace>
-    <AssemblyName>AdminLTE.UnitTest</AssemblyName>
+    <RootNamespace>AdminLTE.Model</RootNamespace>
+    <AssemblyName>AdminLTE.Model</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -38,10 +39,6 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="nunit.framework, Version=3.8.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.3.8.1\lib\net45\nunit.framework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -53,25 +50,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Base\BasisTest.cs" />
-    <Compile Include="Base\DataBaseConnectTest.cs" />
-    <Compile Include="Base\DataBase\BaseContext.cs" />
-    <Compile Include="Base\DataBase\UserEntity.cs" />
-    <Compile Include="Core\BaseTest.cs" />
+    <Compile Include="AdminLteContext.cs" />
+    <Compile Include="Entities\Base\BaseEntity.cs" />
+    <Compile Include="Entities\Base\ISoftDelete.cs" />
+    <Compile Include="Entities\Menu.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="Map\MenuMap.cs" />
+    <Compile Include="Map\UserMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\DemoTest.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <None Include="App.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AdminLTE.Model\AdminLTE.Model.csproj">
-      <Project>{6086ac02-43a9-4bc8-8b4f-fa88125e257f}</Project>
-      <Name>AdminLTE.Model</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

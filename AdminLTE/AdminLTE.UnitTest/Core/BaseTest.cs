@@ -8,6 +8,9 @@ using NUnit.Framework;
 
 namespace AdminLTE.UnitTest.Core
 {
+    /// <summary>
+    /// 测试的基类
+    /// </summary>
     public class BaseTest
     {
         //数据库基类
