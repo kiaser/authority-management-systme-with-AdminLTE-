@@ -26,6 +26,11 @@ namespace AdminLTE.UnitTest.Base
             //Console.WriteLine(string.Join(",",users.Select(t=>t.LoginName)));
             //Console.WriteLine(string.Join(",",users.Select(t=>t.PassWord)));
         }
+        [Test]
+        public void GetMenus_return_true()
+        {
+            
+        }
 
     }
 }
