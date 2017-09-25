@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 using AdminLTE.Model.Entities;
 using AdminLTE.Model.Map;
 
-namespace AdminLTE.Model
+namespace AdminLTE.DAL
 {
-   public class AdminLteContext:DbContext
+    public class AdminLteContext : DbContext
     {
-        public AdminLteContext():base("adminLTE")
+        public AdminLteContext() : base("adminLTE")
         { }
-        public AdminLteContext(string connectstringName):base(connectstringName)
+        public AdminLteContext(string connectstringName) : base(connectstringName)
         { }
         public IDbSet<User> Users { get; set; }
         public IDbSet<Menu> Menus { get; set; }

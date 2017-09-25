@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AdminLTE.UnitTest.Base.DataBase;
+using AdminLTE.DAL;
 using NUnit.Framework;
 
 namespace AdminLTE.UnitTest.Core
@@ -13,19 +10,18 @@ namespace AdminLTE.UnitTest.Core
     /// </summary>
     public class BaseTest
     {
-        //数据库基类
-        public BaseContext BaseContext;
+        public AdminLteContext AdminLteContext;
 
         [SetUp]
         public virtual void SetUp()
         {
-            BaseContext = new BaseContext();
+            AdminLteContext = new AdminLteContext();
         }
 
         [TearDown]
         public virtual void TearDown()
         {
-            BaseContext = null;
+            AdminLteContext = null;
         }
 
         /// <summary>

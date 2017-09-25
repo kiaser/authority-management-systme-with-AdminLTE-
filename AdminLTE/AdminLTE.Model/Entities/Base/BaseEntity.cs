@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace AdminLTE.Model.Entities.Base
 {
-   public class BaseEntity<T>:ISoftDelete
+   public class BaseEntity<TPrimaryKey> : IEntity<TPrimaryKey>,ISoftDelete
     {
         [Key]
-        public T Id { get; set; }
+        public TPrimaryKey Id { get; set; }
         public virtual bool IsDeleted { get; set; }
     }
 

@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AdminLTE.Model;
+﻿using System.Linq;
+using AdminLTE.DAL;
 using AdminLTE.UnitTest.Core;
 using NUnit.Framework;
 

@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminLTE.UnitTest", "AdminL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminLTE.Model", "AdminLTE.Model\AdminLTE.Model.csproj", "{6086AC02-43A9-4BC8-8B4F-FA88125E257F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminLTE.DAL", "AdminLTE.DAL\AdminLTE.DAL.csproj", "{430DAFC6-35D0-4BA6-B7FE-2E95ADF3F622}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminLTE.Core", "AdminLTE.Core\AdminLTE.Core.csproj", "{BE58C9C1-8056-408E-9D49-6E7E7255BCEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{6086AC02-43A9-4BC8-8B4F-FA88125E257F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6086AC02-43A9-4BC8-8B4F-FA88125E257F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6086AC02-43A9-4BC8-8B4F-FA88125E257F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{430DAFC6-35D0-4BA6-B7FE-2E95ADF3F622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{430DAFC6-35D0-4BA6-B7FE-2E95ADF3F622}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{430DAFC6-35D0-4BA6-B7FE-2E95ADF3F622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{430DAFC6-35D0-4BA6-B7FE-2E95ADF3F622}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE58C9C1-8056-408E-9D49-6E7E7255BCEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE58C9C1-8056-408E-9D49-6E7E7255BCEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE58C9C1-8056-408E-9D49-6E7E7255BCEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE58C9C1-8056-408E-9D49-6E7E7255BCEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

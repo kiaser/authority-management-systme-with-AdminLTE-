@@ -50,8 +50,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminLteContext.cs" />
     <Compile Include="Entities\Base\BaseEntity.cs" />
+    <Compile Include="Entities\Base\IEntity.cs" />
     <Compile Include="Entities\Base\ISoftDelete.cs" />
     <Compile Include="Entities\Menu.cs" />
     <Compile Include="Entities\User.cs" />
