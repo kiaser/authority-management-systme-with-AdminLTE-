@@ -58,6 +58,7 @@
     <Compile Include="Base\DataBase\BaseContext.cs" />
     <Compile Include="Base\DataBase\UserEntity.cs" />
     <Compile Include="Core\BaseTest.cs" />
+    <Compile Include="Other\ExpressionTreeTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\DemoTest.cs" />
   </ItemGroup>
