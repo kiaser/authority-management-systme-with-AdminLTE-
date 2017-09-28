@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using AdminLTE.DAL;
 using NUnit.Framework;
+using System.Reflection;
+using System.Text;
 
 namespace AdminLTE.UnitTest.Core
 {
@@ -35,6 +38,27 @@ namespace AdminLTE.UnitTest.Core
             {
                 Console.WriteLine(string.Join(",", paramList));
             }
+        }
+
+        public void WriteMessages<T>(IEnumerable<T> listParams) where T:class ,new()
+        {
+            foreach (var param in listParams)
+            {
+                WriteMessageCore(param);
+            }
+        }
+
+
+        private void WriteMessageCore<T>(T model) where T : class, new()
+        {
+            StringBuilder stringBuilder=new StringBuilder();
+
+            foreach (var propertyInfo in model.GetType().GetProperties())
+            {
+                stringBuilder.Append(propertyInfo.Name + " : " + propertyInfo.GetValue(model,null)+" , ");
+            }
+
+            Console.WriteLine(stringBuilder);
         }
     }
 }
