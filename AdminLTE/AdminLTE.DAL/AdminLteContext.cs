@@ -16,7 +16,7 @@ namespace AdminLTE.DAL
         public AdminLteContext(string connectstringName) : base(connectstringName)
         { }
         public IDbSet<User> Users { get; set; }
-        public IDbSet<Menu> Menus { get; set; }
+        public IDbSet<Model.Entities.Menu> Menus { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

@@ -34,7 +34,7 @@ namespace AdminLTE.UnitTest.Base
             var menus = AdminLteContext.Menus.ToList();
 
             Assert.IsTrue(menus != null && menus.Count > 0);
-            WrileList(menus.Select(t => t.Id.ToString()), menus.Select(t => t.MenuCode), menus.Select(t => t.ParentMenuCode));
+            WrileList(menus.Select(t => t.Id.ToString()), menus.Select(t => t.MenuCode.ToString()), menus.Select(t => t.ParentMenuCode.ToString()));
 
         }
 

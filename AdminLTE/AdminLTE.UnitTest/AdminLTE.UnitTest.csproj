@@ -61,6 +61,7 @@
     <Compile Include="Other\ExpressionTreeTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\DemoTest.cs" />
+    <Compile Include="Services\MenuServiceTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

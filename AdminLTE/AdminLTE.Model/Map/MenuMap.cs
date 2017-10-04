@@ -15,9 +15,7 @@ namespace AdminLTE.Model.Map
         {
             ToTable("Menu").HasKey(t => t.Id);
             Property(t => t.Id).HasColumnName("MenuId").HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
-            Property(t => t.MenuCode).HasMaxLength(50).IsRequired();
-            Property(t => t.ParentMenuCode).HasMaxLength(50).IsRequired();
-            Property(t => t.Url).HasMaxLength(200).IsRequired();
+            Property(t => t.Url).HasMaxLength(200);
         }
     }
 }

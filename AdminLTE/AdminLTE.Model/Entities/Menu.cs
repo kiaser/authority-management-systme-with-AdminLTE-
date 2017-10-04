@@ -9,8 +9,20 @@ namespace AdminLTE.Model.Entities
 {
    public class Menu:BaseEntity
     {
-        public string MenuCode { get; set; }
-        public string ParentMenuCode { get; set; }
+        public Guid MenuCode { get; set; }
+        public Guid? ParentMenuCode { get; set; }
         public string Url { get; set; }
+
+        public string Name { get; set; }
+
+        public bool? IsLeaf { get; set; }
+
+        public bool? IsAutoExpand { get; set; }
+
+        public string IconName { get; set; }
+
+        public string ParentName { get; set; }
+
+        public string SortNo { get; set; }
     }
 }
