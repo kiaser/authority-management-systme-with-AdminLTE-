@@ -23,7 +23,7 @@ namespace AdminLTE.DAL.Menu
                 foreach (var rootMenu in menus.Where(t => !t.ParentMenuCode.HasValue).OrderBy(t=>t.SortNo))
                 {
                     menuStringBuilder.Append(
-                        "<li class=\"treeview\"><a href=\"#\"><i class=\"fa fa-folder\"></i><span>" + rootMenu.Name +
+                        "<li class=\"treeview\" id=\""+rootMenu.MenuCode+"\"><a href=\"#\"><i class=\"fa fa-folder\"></i><span>" + rootMenu.Name +
                         "</span> <i class=\"fa fa-angle-left pull-right\"></i></a>");
                     menuStringBuilder.Append("<ul class=\"treeview-menu\">");
                     foreach (var childMenu in menus.Where(t => t.ParentMenuCode == rootMenu.MenuCode))
@@ -37,7 +37,8 @@ namespace AdminLTE.DAL.Menu
                         //                         childMenu.IconName + "\"</i>" + childMenu.Name + "</a></li>");
                         //menuStringBuilder.Append("<li ><a href=\"#\"><i class=\"fa fa-user\"></i>" + childMenu.Name + "</a></li>");
 
-                        menuStringBuilder.Append("<li ><a href=\"" + childMenu.Url + "\"><i class=\"" +
+                        menuStringBuilder.Append("<li id=\"" + childMenu.MenuCode + "\"><a href=\"" + childMenu.Url +
+                                                 "\"><i class=\"" +
                                                  childMenu.IconName + "\"></i>" +
                                                  childMenu.Name + "</a></li>");
 

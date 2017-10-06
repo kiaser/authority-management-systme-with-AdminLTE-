@@ -169,6 +169,7 @@
     <Content Include="JavaScript\Tables\Data-menu.js" />
     <Content Include="JavaScript\Tables\Data.js" />
     <Content Include="JavaScript\Tables\Simple-menu.js" />
+    <Content Include="JavaScript\Users\UserMenu.js" />
     <Content Include="JavaScript\Widgets\Widgets-menu.js" />
     <Content Include="Scripts\AdminLTE\bootstrap\css\bootstrap.css" />
     <Content Include="Scripts\AdminLTE\bootstrap\css\bootstrap.min.css" />
