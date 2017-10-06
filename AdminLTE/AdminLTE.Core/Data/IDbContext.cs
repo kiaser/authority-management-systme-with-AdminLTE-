@@ -8,7 +8,7 @@ using AdminLTE.Model.Entities.Base;
 
 namespace AdminLTE.Core.Data
 {
-    interface IDbContext
+   public interface IDbContext
     {
         IDbSet<TEntity> Set<TEntity>() where TEntity : BaseEntity,new();
 

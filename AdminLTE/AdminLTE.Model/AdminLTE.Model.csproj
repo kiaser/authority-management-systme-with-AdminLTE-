@@ -54,6 +54,7 @@
     <Compile Include="Entities\Base\IEntity.cs" />
     <Compile Include="Entities\Base\ISoftDelete.cs" />
     <Compile Include="Entities\Menu.cs" />
+    <Compile Include="Entities\Role.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Map\MenuMap.cs" />
     <Compile Include="Map\UserMap.cs" />

@@ -335,5 +335,15 @@
             $("[data-layout='sidebar-collapse']").attr('checked', 'checked');
         }
 
+
+        //menu点击
+        if (window.location.pathname !== '/') {
+            var attribute = "[href=\'" + window.location.pathname + "\']";
+
+            $(attribute).parent().addClass('active');
+            $(attribute).parents("li.treeview").addClass('active');
+        }
+
     }
 })(jQuery, $.AdminLTE);
+

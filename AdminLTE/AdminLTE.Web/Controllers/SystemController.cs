@@ -13,5 +13,10 @@ namespace AdminLTE.Web.Controllers
         {
             return View();
         }
+
+        public new ActionResult User1()
+        {
+            return View();
+        }
     }
 }

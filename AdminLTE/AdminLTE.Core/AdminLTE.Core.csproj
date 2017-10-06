@@ -49,9 +49,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\BaseService.cs" />
     <Compile Include="Data\DataBaseContext.cs" />
+    <Compile Include="Data\EfDbExcption.cs" />
+    <Compile Include="Data\EfRepository.cs" />
     <Compile Include="Data\IDbContext.cs" />
     <Compile Include="Data\IRepository.cs" />
+    <Compile Include="Data\Queryable.cs" />
+    <Compile Include="Entity\IPagedResultRequest.cs" />
+    <Compile Include="Entity\PagedResultRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

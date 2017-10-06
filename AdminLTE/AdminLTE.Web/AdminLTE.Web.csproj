@@ -1031,6 +1031,7 @@
     <Content Include="Views\Home\Index1.cshtml" />
     <Content Include="Views\System\User.cshtml" />
     <Content Include="Views\Novel\Manager.cshtml" />
+    <Content Include="Views\System\User1.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1044,9 +1045,17 @@
     <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AdminLTE.Core\AdminLTE.Core.csproj">
+      <Project>{be58c9c1-8056-408e-9d49-6e7e7255bcef}</Project>
+      <Name>AdminLTE.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AdminLTE.DAL\AdminLTE.DAL.csproj">
       <Project>{430DAFC6-35D0-4BA6-B7FE-2E95ADF3F622}</Project>
       <Name>AdminLTE.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AdminLTE.Model\AdminLTE.Model.csproj">
+      <Project>{6086ac02-43a9-4bc8-8b4f-fa88125e257f}</Project>
+      <Name>AdminLTE.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
