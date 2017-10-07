@@ -1,8 +1,8 @@
 2017-10-06
 1.仓库 
 
-2.user role  menu
+2.user role  menu  外键的关系
 
-3.权限管理
+3.权限管理 cookie存储用户信息
 
-4.缓存
+4.缓存 缓存menu

@@ -336,12 +336,16 @@
         }
 
 
+        console.log("pathname");
         //menu点击
         if (window.location.pathname !== '/') {
             var attribute = "[href=\'" + window.location.pathname + "\']";
 
             $(attribute).parent().addClass('active');
             $(attribute).parents("li.treeview").addClass('active');
+
+            console.log($(attribute).parent());
+            console.log($(attribute).parents("li.treeview"));
         }
 
     }
