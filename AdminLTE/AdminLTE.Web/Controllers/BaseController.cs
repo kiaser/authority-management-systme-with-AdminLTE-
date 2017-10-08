@@ -15,6 +15,7 @@ namespace AdminLTE.Web.Controllers
         // GET: Base
         public BaseController()
         {
+            //todo 需要运用缓存
             ViewBag.Menus = _menuService.GetMenuByUser();
         }
 
